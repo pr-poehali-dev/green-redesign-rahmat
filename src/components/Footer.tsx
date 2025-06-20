@@ -2,80 +2,87 @@ import Icon from "@/components/ui/icon";
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white py-16">
+    <footer className="bg-dark-bg text-foreground py-16 border-t border-border">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-4 gap-8">
           <div>
-            <div className="text-2xl font-bold mb-6">RAHMAT</div>
-            <p className="text-gray-400 text-sm leading-relaxed">
-              Детская одежда и аксессуары от лучших мировых брендов.
+            <div className="text-2xl font-bold text-orange-accent mb-6">
+              БИТУМНАЯ КРОШКА
+            </div>
+            <p className="text-muted-foreground text-sm leading-relaxed">
+              Качественная битумная крошка для строительства и дорожных работ.
             </p>
           </div>
 
           <div>
-            <h3 className="text-sm font-medium mb-6 text-white">КАТАЛОГ</h3>
-            <ul className="space-y-3 text-sm text-gray-400">
+            <h3 className="text-sm font-semibold mb-6 text-foreground">
+              ПРОДУКЦИЯ
+            </h3>
+            <ul className="space-y-3 text-sm text-muted-foreground">
               <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  Мальчики
+                <a href="#" className="hover:text-foreground transition-colors">
+                  Битумная крошка
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  Девочки
+                <a href="#" className="hover:text-foreground transition-colors">
+                  Технические условия
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  Обувь
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  Аксессуары
+                <a href="#" className="hover:text-foreground transition-colors">
+                  Характеристики
                 </a>
               </li>
             </ul>
           </div>
 
           <div>
-            <h3 className="text-sm font-medium mb-6 text-white">ИНФОРМАЦИЯ</h3>
-            <ul className="space-y-3 text-sm text-gray-400">
+            <h3 className="text-sm font-semibold mb-6 text-foreground">
+              ПРИМЕНЕНИЕ
+            </h3>
+            <ul className="space-y-3 text-sm text-muted-foreground">
               <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  О нас
+                <a href="#" className="hover:text-foreground transition-colors">
+                  Дорожные работы
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  Доставка
+                <a href="#" className="hover:text-foreground transition-colors">
+                  Мастики
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  Возврат
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  Контакты
+                <a href="#" className="hover:text-foreground transition-colors">
+                  Гидроизоляция
                 </a>
               </li>
             </ul>
           </div>
 
           <div>
-            <h3 className="text-sm font-medium mb-6 text-white">КОНТАКТЫ</h3>
-            <div className="space-y-3 text-sm text-gray-400">
-              <div>+375 (29) 123-45-67</div>
-              <div>info@rahmat.by</div>
-              <div>г. Минск, ул. Притыцкого 62</div>
+            <h3 className="text-sm font-semibold mb-6 text-foreground">
+              КОНТАКТЫ
+            </h3>
+            <div className="space-y-3 text-sm text-muted-foreground">
+              <div className="flex items-center space-x-2">
+                <Icon name="Phone" size={16} />
+                <span>+375 (29) 123-45-67</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <Icon name="Mail" size={16} />
+                <span>info@bitum-kroshka.by</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <Icon name="MapPin" size={16} />
+                <span>г. Минск, Беларусь</span>
+              </div>
             </div>
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-12 pt-8 text-center text-sm text-gray-400">
-          <p>&copy; 2024 RAHMAT. Все права защищены.</p>
+        <div className="border-t border-border mt-12 pt-8 text-center text-sm text-muted-foreground">
+          <p>&copy; 2024 Битумная крошка. Все права защищены.</p>
         </div>
       </div>
     </footer>

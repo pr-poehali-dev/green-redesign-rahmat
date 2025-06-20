@@ -1,23 +1,50 @@
 const Hero = () => {
   return (
-    <section className="bg-white py-20">
-      <div className="container mx-auto px-4">
-        <div className="text-center max-w-4xl mx-auto">
-          <h1 className="text-5xl lg:text-7xl font-light text-black mb-8 leading-tight">
-            Детская одежда
-            <br />и аксессуары
-          </h1>
-          <p className="text-lg text-gray-600 mb-12 max-w-2xl mx-auto">
-            Качественная детская одежда от лучших мировых брендов. Комфорт и
-            стиль для ваших малышей.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="px-8 py-3 bg-black text-white text-sm font-medium hover:bg-gray-800 transition-colors">
-              ПОСМОТРЕТЬ КОЛЛЕКЦИЮ
+    <section className="bg-dark-bg text-foreground py-20 relative overflow-hidden">
+      {/* Паттерн из листьев */}
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute top-10 left-10 w-8 h-8 border-2 border-leaf-pattern transform rotate-45"></div>
+        <div className="absolute top-20 right-20 w-6 h-6 border-2 border-leaf-pattern transform -rotate-12"></div>
+        <div className="absolute bottom-20 left-20 w-10 h-10 border-2 border-leaf-pattern transform rotate-12"></div>
+        <div className="absolute bottom-10 right-10 w-4 h-4 border-2 border-leaf-pattern transform -rotate-45"></div>
+      </div>
+
+      <div className="container mx-auto px-4 relative">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <h1 className="text-4xl lg:text-6xl font-bold text-orange-accent mb-6 leading-tight">
+              КРОШКА БИТУМНАЯ
+            </h1>
+            <div className="bg-card/50 p-6 rounded-lg mb-8">
+              <p className="text-lg text-muted-foreground mb-4">
+                Крошка битумная вторичная гранулированная
+              </p>
+              <p className="text-sm text-muted-foreground">
+                ТУ BY 790380165.003-2014
+              </p>
+            </div>
+
+            <div className="mb-8">
+              <h2 className="text-2xl font-bold text-orange-accent mb-4">
+                ОБЛАСТЬ ПРИМЕНЕНИЯ
+              </h2>
+              <p className="text-muted-foreground leading-relaxed">
+                Предназначена для изготовления мастик битумных, для ремонта
+                автомобильных дорог, приготовления асфальтобетонных смесей
+              </p>
+            </div>
+
+            <button className="px-8 py-4 bg-orange-accent text-white text-lg font-medium hover:bg-orange-accent/90 transition-colors rounded">
+              Оставить заявку
             </button>
-            <button className="px-8 py-3 border border-black text-black text-sm font-medium hover:bg-black hover:text-white transition-colors">
-              НОВИНКИ
-            </button>
+          </div>
+
+          <div className="relative">
+            <img
+              src="https://cdn.poehali.dev/files/1d3c28c7-522c-441d-8580-2627dc4064e1.jpg"
+              alt="Битумная крошка"
+              className="w-full h-[400px] object-cover rounded-lg"
+            />
           </div>
         </div>
       </div>

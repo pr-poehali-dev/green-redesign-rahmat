@@ -7,34 +7,39 @@
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 0 0% 0%;
+    --foreground: 220 13% 91%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 0%;
+    --card: 222 84% 5%;
+    --card-foreground: 220 13% 91%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 0%;
+    --popover: 222 84% 5%;
+    --popover-foreground: 220 13% 91%;
 
-    --primary: 0 0% 0%;
+    --primary: 20 91% 48%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 0 0% 96%;
-    --secondary-foreground: 0 0% 0%;
+    --secondary: 222 47% 11%;
+    --secondary-foreground: 220 13% 91%;
 
-    --muted: 0 0% 96%;
-    --muted-foreground: 0 0% 45%;
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
 
-    --accent: 0 0% 96%;
-    --accent-foreground: 0 0% 0%;
+    --accent: 217 33% 17%;
+    --accent-foreground: 220 13% 91%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 220 13% 91%;
 
-    --border: 0 0% 90%;
-    --input: 0 0% 90%;
-    --ring: 0 0% 0%;
+    --border: 217 33% 17%;
+    --input: 217 33% 17%;
+    --ring: 20 91% 48%;
 
-    --radius: 0.375rem;
+    --radius: 0.5rem;
+
+    /* Дополнительные цвета для битумной тематики */
+    --dark-bg: 222 84% 5%;
+    --orange-accent: 20 91% 48%;
+    --leaf-pattern: 217 33% 17%;
   }
 }
 

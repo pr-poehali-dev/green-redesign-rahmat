@@ -1,58 +1,47 @@
-import { Button } from "@/components/ui/button";
 import Icon from "@/components/ui/icon";
 
 const Header = () => {
   return (
-    <header className="bg-white border-b">
+    <header className="bg-dark-bg text-foreground border-b border-border">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <div className="text-2xl font-bold text-black">RAHMAT</div>
+          <div className="text-2xl font-bold text-orange-accent">
+            БИТУМНАЯ КРОШКА
+          </div>
 
           <nav className="hidden md:flex items-center space-x-8">
             <a
               href="#"
-              className="text-gray-600 hover:text-black transition-colors text-sm"
+              className="text-muted-foreground hover:text-foreground transition-colors text-sm"
             >
-              МАЛЬЧИКИ
+              ГЛАВНАЯ
             </a>
             <a
               href="#"
-              className="text-gray-600 hover:text-black transition-colors text-sm"
+              className="text-muted-foreground hover:text-foreground transition-colors text-sm"
             >
-              ДЕВОЧКИ
+              О ПРОДУКТЕ
             </a>
             <a
               href="#"
-              className="text-gray-600 hover:text-black transition-colors text-sm"
+              className="text-muted-foreground hover:text-foreground transition-colors text-sm"
             >
-              ОБУВЬ
+              ПРИМЕНЕНИЕ
             </a>
             <a
               href="#"
-              className="text-gray-600 hover:text-black transition-colors text-sm"
+              className="text-muted-foreground hover:text-foreground transition-colors text-sm"
             >
-              АКСЕССУАРЫ
-            </a>
-            <a
-              href="#"
-              className="text-gray-600 hover:text-black transition-colors text-sm"
-            >
-              OUTLET
+              КОНТАКТЫ
             </a>
           </nav>
 
           <div className="flex items-center space-x-4">
-            <button className="p-2">
-              <Icon name="Search" size={20} />
+            <button className="p-2 text-muted-foreground hover:text-foreground">
+              <Icon name="Phone" size={20} />
             </button>
-            <button className="p-2">
-              <Icon name="User" size={20} />
-            </button>
-            <button className="p-2 relative">
-              <Icon name="ShoppingBag" size={20} />
-              <span className="absolute -top-1 -right-1 bg-black text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
-                0
-              </span>
+            <button className="px-6 py-2 bg-orange-accent text-white text-sm font-medium hover:bg-orange-accent/90 transition-colors rounded">
+              ЗАКАЗАТЬ
             </button>
           </div>
         </div>

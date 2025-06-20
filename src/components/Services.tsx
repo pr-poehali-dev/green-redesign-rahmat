@@ -1,54 +1,59 @@
+import Icon from "@/components/ui/icon";
+
 const Services = () => {
-  const categories = [
+  const applications = [
     {
-      title: "Мальчики",
-      description: "0-16 лет",
-      image:
-        "https://images.unsplash.com/photo-1519457431-44c20c7b049b?w=400&h=500&fit=crop&crop=center",
+      title: "Изготовление мастик",
+      description: "Битумные мастики для гидроизоляции и защиты",
+      icon: "Wrench",
     },
     {
-      title: "Девочки",
-      description: "0-16 лет",
-      image:
-        "https://images.unsplash.com/photo-1518831959646-742c3a14ebf7?w=400&h=500&fit=crop&crop=center",
+      title: "Ремонт автодорог",
+      description: "Восстановление и ремонт дорожного покрытия",
+      icon: "Car",
     },
     {
-      title: "Обувь",
-      description: "Все размеры",
-      image:
-        "https://images.unsplash.com/photo-1514989940723-e8e51635b782?w=400&h=500&fit=crop&crop=center",
+      title: "Асфальтобетонные смеси",
+      description: "Производство качественных дорожных покрытий",
+      icon: "Layers",
     },
     {
-      title: "Аксессуары",
-      description: "Дополнения к образу",
-      image:
-        "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=500&fit=crop&crop=center",
+      title: "Гидроизоляция",
+      description: "Защита от влаги и атмосферных воздействий",
+      icon: "Shield",
     },
   ];
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-secondary">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-4xl font-light text-black mb-4">
-            Категории
+          <h2 className="text-3xl lg:text-4xl font-bold text-orange-accent mb-4">
+            Области применения
           </h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto">
+            Битумная крошка широко используется в строительстве и дорожном
+            хозяйстве
+          </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {categories.map((category, index) => (
-            <div key={index} className="group cursor-pointer">
-              <div className="aspect-[3/4] bg-white mb-4 overflow-hidden">
-                <img
-                  src={category.image}
-                  alt={category.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+          {applications.map((app, index) => (
+            <div
+              key={index}
+              className="bg-card p-6 rounded-lg text-center group hover:bg-card/80 transition-colors"
+            >
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-orange-accent/20 rounded-full mb-4 group-hover:bg-orange-accent/30 transition-colors">
+                <Icon
+                  name={app.icon}
+                  size={24}
+                  className="text-orange-accent"
                 />
               </div>
-              <h3 className="text-lg font-medium text-black mb-1">
-                {category.title}
+              <h3 className="text-lg font-semibold text-foreground mb-2">
+                {app.title}
               </h3>
-              <p className="text-sm text-gray-600">{category.description}</p>
+              <p className="text-sm text-muted-foreground">{app.description}</p>
             </div>
           ))}
         </div>

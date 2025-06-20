@@ -2,52 +2,78 @@ const About = () => {
   const features = [
     {
       title: "Качество",
-      description: "Только проверенные бренды и натуральные материалы",
+      description: "Соответствие ТУ BY 790380165.003-2014",
     },
     {
-      title: "Доставка",
-      description: "Быстрая доставка по всей Беларуси",
+      title: "Экологичность",
+      description: "Вторичная переработка битумных материалов",
     },
     {
-      title: "Сервис",
-      description: "Индивидуальный подход к каждому клиенту",
+      title: "Универсальность",
+      description: "Широкий спектр применения в строительстве",
     },
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-dark-bg">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
-            <h2 className="text-3xl lg:text-4xl font-light text-black mb-8">
-              О магазине
-              <br />
-              <span className="font-medium">RAHMAT</span>
+            <h2 className="text-3xl lg:text-4xl font-bold text-orange-accent mb-8">
+              О продукте
             </h2>
-            <p className="text-lg text-gray-600 mb-12 leading-relaxed">
-              Мы создали магазин детской одежды, который объединяет качество,
-              стиль и комфорт. Наша миссия — предоставить родителям лучший выбор
-              одежды для их детей.
+            <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+              Битумная крошка вторичная гранулированная - это переработанный
+              битумный материал, который используется в различных сферах
+              строительства и дорожного хозяйства.
+            </p>
+            <p className="text-muted-foreground mb-12 leading-relaxed">
+              Наш продукт соответствует техническим условиям ТУ BY
+              790380165.003-2014 и обеспечивает высокое качество выполняемых
+              работ.
             </p>
 
             <div className="space-y-8">
               {features.map((feature, index) => (
-                <div key={index}>
-                  <h3 className="text-lg font-medium text-black mb-2">
+                <div
+                  key={index}
+                  className="border-l-4 border-orange-accent pl-6"
+                >
+                  <h3 className="text-lg font-semibold text-foreground mb-2">
                     {feature.title}
                   </h3>
-                  <p className="text-gray-600">{feature.description}</p>
+                  <p className="text-muted-foreground">{feature.description}</p>
                 </div>
               ))}
             </div>
           </div>
 
           <div className="relative">
-            <img
-              src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=600&h=700&fit=crop&crop=center"
-              alt="Детская одежда"
-              className="w-full h-[500px] object-cover"
-            />
+            <div className="bg-card p-8 rounded-lg">
+              <h3 className="text-xl font-bold text-orange-accent mb-6">
+                Технические характеристики
+              </h3>
+              <div className="space-y-4">
+                <div className="flex justify-between border-b border-border pb-2">
+                  <span className="text-muted-foreground">Фракция</span>
+                  <span className="text-foreground">0-5 мм</span>
+                </div>
+                <div className="flex justify-between border-b border-border pb-2">
+                  <span className="text-muted-foreground">Влажность</span>
+                  <span className="text-foreground">не более 3%</span>
+                </div>
+                <div className="flex justify-between border-b border-border pb-2">
+                  <span className="text-muted-foreground">
+                    Температура размягчения
+                  </span>
+                  <span className="text-foreground">не менее 40°C</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-muted-foreground">Упаковка</span>
+                  <span className="text-foreground">Биг-бэг / навал</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

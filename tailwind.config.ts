@@ -55,6 +55,9 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        "dark-bg": "hsl(var(--dark-bg))",
+        "orange-accent": "hsl(var(--orange-accent))",
+        "leaf-pattern": "hsl(var(--leaf-pattern))",
       },
       borderRadius: {
         lg: "var(--radius)",
