@@ -1,108 +1,77 @@
-import { Button } from "@/components/ui/button";
 import Icon from "@/components/ui/icon";
 
 const Contact = () => {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-            Контакты
-          </h2>
-          <p className="text-lg text-gray-600">
-            Свяжитесь с нами для записи на приём
-          </p>
-        </div>
+        <div className="grid lg:grid-cols-2 gap-16">
+          <div>
+            <h2 className="text-3xl lg:text-4xl font-light text-black mb-8">
+              Контакты
+            </h2>
 
-        <div className="grid lg:grid-cols-2 gap-12">
-          <div className="space-y-8">
-            <div className="flex items-start space-x-4">
-              <div className="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center">
-                <Icon name="MapPin" size={24} className="text-white" />
-              </div>
+            <div className="space-y-8">
               <div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-1">
-                  Адрес
-                </h3>
+                <h3 className="text-lg font-medium text-black mb-2">Адрес</h3>
                 <p className="text-gray-600">
-                  г. Алматы, ул. Абая 150/230
+                  г. Минск, ул. Притыцкого 62
                   <br />
-                  (угол ул. Манаса)
+                  ТЦ "Галерея Минск"
                 </p>
               </div>
-            </div>
 
-            <div className="flex items-start space-x-4">
-              <div className="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center">
-                <Icon name="Phone" size={24} className="text-white" />
-              </div>
               <div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-1">
-                  Телефон
-                </h3>
-                <p className="text-gray-600">
-                  +7 (727) 123-45-67
-                  <br />
-                  +7 (777) 123-45-67
-                </p>
+                <h3 className="text-lg font-medium text-black mb-2">Телефон</h3>
+                <p className="text-gray-600">+375 (29) 123-45-67</p>
               </div>
-            </div>
 
-            <div className="flex items-start space-x-4">
-              <div className="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center">
-                <Icon name="Clock" size={24} className="text-white" />
-              </div>
               <div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-1">
+                <h3 className="text-lg font-medium text-black mb-2">Email</h3>
+                <p className="text-gray-600">info@rahmat.by</p>
+              </div>
+
+              <div>
+                <h3 className="text-lg font-medium text-black mb-2">
                   Режим работы
                 </h3>
                 <p className="text-gray-600">
-                  Пн-Пт: 8:00 - 20:00
+                  Пн-Сб: 10:00 - 22:00
                   <br />
-                  Сб-Вс: 9:00 - 18:00
+                  Вс: 10:00 - 21:00
                 </p>
               </div>
             </div>
           </div>
 
-          <div className="bg-gray-50 rounded-2xl p-8">
-            <h3 className="text-xl font-semibold text-gray-900 mb-6">
-              Записаться на приём
+          <div className="bg-white p-8">
+            <h3 className="text-xl font-medium text-black mb-6">
+              Написать нам
             </h3>
             <form className="space-y-4">
               <div>
                 <input
                   type="text"
-                  placeholder="Ваше имя"
-                  className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+                  placeholder="Имя"
+                  className="w-full px-0 py-3 border-0 border-b border-gray-200 focus:outline-none focus:border-black bg-transparent"
                 />
               </div>
               <div>
                 <input
-                  type="tel"
-                  placeholder="Телефон"
-                  className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+                  type="email"
+                  placeholder="Email"
+                  className="w-full px-0 py-3 border-0 border-b border-gray-200 focus:outline-none focus:border-black bg-transparent"
                 />
               </div>
               <div>
-                <select className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
-                  <option>Выберите услугу</option>
-                  <option>Терапия</option>
-                  <option>Кардиология</option>
-                  <option>Офтальмология</option>
-                  <option>Неврология</option>
-                </select>
-              </div>
-              <div>
                 <textarea
-                  placeholder="Комментарий"
-                  rows={3}
-                  className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+                  placeholder="Сообщение"
+                  rows={4}
+                  className="w-full px-0 py-3 border-0 border-b border-gray-200 focus:outline-none focus:border-black bg-transparent resize-none"
                 ></textarea>
               </div>
-              <Button className="w-full bg-green-500 hover:bg-green-600 text-white py-3">
-                Отправить заявку
-              </Button>
+              <button className="px-8 py-3 bg-black text-white text-sm font-medium hover:bg-gray-800 transition-colors">
+                ОТПРАВИТЬ
+              </button>
             </form>
           </div>
         </div>
